@@ -6,29 +6,27 @@ if(WIN32)
             ${BIN_DIR}/cfitsio.dll
             ${BIN_DIR}/freexl.dll
             ${BIN_DIR}/fribidi.dll
-            ${BIN_DIR}/ftgl.dll
-            ${BIN_DIR}/gdal110.dll
+            ${BIN_DIR}/gdal111.dll
             ${BIN_DIR}/geos_c.dll
-            ${BIN_DIR}/hdf5dll.dll
+            ${BIN_DIR}/hdf5.dll
             ${BIN_DIR}/iconv.dll
-            ${BIN_DIR}/icudt.dll
+            ${BIN_DIR}/icudtl.dat
             ${BIN_DIR}/libcurl.dll
             ${BIN_DIR}/libeay32.dll
             ${BIN_DIR}/libecwj2.dll
-            ${BIN_DIR}/libexpat.dll
+            ${BIN_DIR}/expat.dll
             ${BIN_DIR}/libfcgi.dll
             ${BIN_DIR}/libmysql.dll
             ${BIN_DIR}/libpq.dll
             ${BIN_DIR}/libtiff.dll
             ${BIN_DIR}/libxml2.dll
-            ${BIN_DIR}/lti_dsdk.dll
-            ${BIN_DIR}/lti_lidar_dsdk.dll
+            ${BIN_DIR}/lti_dsdk_9.1.dll
+            ${BIN_DIR}/lti_lidar_dsdk_1.1.dll
             ${BIN_DIR}/mapserver.dll
-            ${BIN_DIR}/msvcp100.dll
-            ${BIN_DIR}/msvcr100.dll
+            ${BIN_DIR}/msvcp120.dll
+            ${BIN_DIR}/msvcr120.dll
             ${BIN_DIR}/netcdf.dll
             ${BIN_DIR}/openjp2.dll
-            ${BIN_DIR}/openjpeg.dll
             ${BIN_DIR}/osgEarth.dll
             ${BIN_DIR}/osgEarthAnnotation.dll
             ${BIN_DIR}/osgEarthFeatures.dll
@@ -36,7 +34,6 @@ if(WIN32)
             ${BIN_DIR}/osgEarthUtil.dll
             ${BIN_DIR}/proj.dll
             ${BIN_DIR}/spatialite.dll
-            ${BIN_DIR}/sqlite3.dll
             ${BIN_DIR}/ssleay32.dll
             ${BIN_DIR}/xerces-c_2_8.dll
             ${BIN_DIR}/zlib1.dll
