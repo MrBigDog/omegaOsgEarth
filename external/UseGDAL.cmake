@@ -17,7 +17,7 @@ if(WIN32)
         if(OMEGA_ARCH_64)
             file(DOWNLOAD http://omegalib.s3.amazonaws.com/gdal/gdal-x64.tar.gz ${EXTLIB_TGZ} SHOW_PROGRESS)
         else()
-            file(DOWNLOAD "https://omegalib.googlecode.com/files/gdal.tar.gz" ${EXTLIB_TGZ} SHOW_PROGRESS)
+            file(DOWNLOAD "https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/omegalib/gdal.tar.gz" ${EXTLIB_TGZ} SHOW_PROGRESS)
         endif()
 		execute_process(COMMAND ${CMAKE_COMMAND} -E tar xzf ${EXTLIB_TGZ} WORKING_DIRECTORY ${CMAKE_BINARY_DIR}/3rdparty)
 	endif(NOT EXISTS ${EXTLIB_DIR})
@@ -36,7 +36,7 @@ else()
         set(NETCDF_BASE_DIR ${CMAKE_BINARY_DIR}/3rdparty/netcdf)
         ExternalProject_Add(
             netcdf
-            URL "https://omegalib.googlecode.com/files/${NETCDF_TGZ}"
+            URL "https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/omegalib/${NETCDF_TGZ}"
             CONFIGURE_COMMAND ""
             BUILD_COMMAND ""
             INSTALL_COMMAND ""
@@ -99,7 +99,7 @@ else()
         ExternalProject_Add(
             netcdf
             DEPENDS hdf5 proj4
-            URL "http://omegalib.googlecode.com/files/${NETCDF_TGZ}"
+            URL "https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/omegalib/${NETCDF_TGZ}"
             CMAKE_ARGS
                 -DCMAKE_BUILD_TYPE=${CMAKE_BUILD_TYPE}
                 -DBUILD_SHARED_LIBS=ON
